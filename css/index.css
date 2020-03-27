@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
+.progress{
+  background: linear-gradient(90deg, grey 0%, rgb(255, 194, 13) 100%);
+  background-size: 300vw;
+  background-position: -200vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 1em;
+  overflow: hidden;
+}
+
 body {
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
