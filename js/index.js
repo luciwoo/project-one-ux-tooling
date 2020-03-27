@@ -46,41 +46,26 @@ if (amtScrolled > h1Top + h1Height) {
     $titleBar.innerHTML = ``;
 }
 })
-// let wordCount = (text.split(" ").length );
-// console.log(wordCount)
-const regex = /\s\S/g;
-const found = text.trim().match(regex);
-let wordCount = Math.floor(Math.round(found.length+1)/200);
-if (wordCount == "1") {
-    $readingTime.innerHTML = `less than a minute`;
+
+function startTimer(duration, display) {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
 }
-if (wordCount == "2") {
-    $readingTime.innerHTML = `less than two minutes`;
-}  
-if (wordCount == "3") {
-    $readingTime.innerHTML = `less than three minutes`;    
-}
-if (wordCount == "4") {
-    $readingTime.innerHTML = `less than four minutes`;    
-}  
-if (wordCount == "5") {
-    $readingTime.innerHTML = `less than five minutes`;    
-}  
-if (wordCount == "6") {
-    $readingTime.innerHTML = `less than six minutes`;    
-}    
-if (wordCount == "7") {
-    $readingTime.innerHTML = `less than seven minutes`;    
-}    
-if (wordCount == "8") {
-    $readingTime.innerHTML = `less than eight minutes`;    
-}    
-if (wordCount == "9") {
-    $readingTime.innerHTML = `less than nine minutes`;       
-}    
-if (wordCount == "10") {
-    $readingTime.innerHTML = `less than ten minutes`;       
-}    
-if (wordCount >= "11") {
-    $readingTime.innerHTML = `more than ten minutes`; 
-}   
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
