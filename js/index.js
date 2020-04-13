@@ -140,7 +140,8 @@ let windowLoaded = () => {
     
     }
     
+    let myDiv = document.querySelector('#myDIV')
     // window.addEventListener('click', loadContentFormHtmlFile('content.html'))
-    #myDIV.addEventListener('click', event => {loadContentFormHtmlFile('content.html')
+    myDIV.addEventListener('click', event => {loadContentFormHtmlFile('page2.html')
     
     })
