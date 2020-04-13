@@ -141,6 +141,6 @@ let windowLoaded = () => {
     }
     
     // window.addEventListener('click', loadContentFormHtmlFile('content.html'))
-    window.addEventListener('click', event => {loadContentFormHtmlFile('content.html')
+    #myDIV.addEventListener('click', event => {loadContentFormHtmlFile('content.html')
     
     })
