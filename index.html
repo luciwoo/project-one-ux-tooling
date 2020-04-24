@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subway Sandwich Customization</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <ul class="panel">
+    <!-- Info about the state of the interface will go here -->
+  </ul>
+
+  <main class="story">
+    <header>
+      <img class="banner-img-header" src="img/banner.png" alt="banner-img">
+    </header>
+    <nav class="navBar" id="navBar">
+      <ul class="navbar-list">
+        <li class="nav-section"><a href="#center-mode-carousel-bread">BREAD</a></li>
+        <li class="nav-section"><a href="#center-mode-carousel-meat">MEAT</a></li>
+        <li class="nav-section"><a href="#center-mode-carousel-cheese">CHEESE</a></li>
+        <li class="nav-section"><a href="#center-mode-carousel-veggies">VEGGIES</a></li>
+        <li class="nav-section"><a href="#center-mode-carousel-sauces">SAUCES</a></li>
+        <!-- <li class="nav-section"><a href="#order-now">ORDER</a></li> -->
+      </ul>
+    </nav>
+    
+    <article class="order-process">
+      
+      <section class="first, full-viewport" id="center-mode-carousel-bread">
+        <h2>STEP 1: CHOOSE BREAD</h2>
+        <h4>Please choose 1 from our 5 types of bread which are soft, hearty, and smells as good as it tastes.</h4>
+
+        <div class="responsive">
+          <div class="9-Grain-Wheat">
+            <div class="gallery">
+              <img src="img/bread/9-grain-wheat.png" alt="9-grain-wheat">
+              <div class="desc">
+                <label class="container">
+                  <h3>9-Grain Wheat</h3>
+                  <input name="product" value="360" type="radio" onclick="totalIt()"/>
+                  <span class="checkmark"></span>
+                  <p>360 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="Italian-Herbs-&-Cheese">
+            <div class="gallery">
+              <img src="img/bread/italian-herbs&cheese.png" alt="Italian-Herbs-&-Cheese">
+              <div class="desc">
+                <label class="container">
+                  <h3>Herbs & Cheese</h3>
+                  <input name="product" value="450" type="radio" onclick="totalIt()"/>
+                  <span class="checkmark"></span>
+                  <p>450 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="Artisan-Flatbread">
+            <div class="gallery">
+              <img src="img/bread/flatbread.png" alt="Artisan-Flatbread">
+              <div class="desc">
+                <label class="container">
+                  <h3>Flatbread</h3>
+                  <input name="product" value="440" type="radio" onclick="totalIt()"/>
+                  <span class="checkmark"></span>
+                  <p>440 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="Italian">
+            <div class="gallery">
+              <img src="img/bread/italian.png" alt="Italian">
+              <div class="desc">
+                <label class="container">
+                  <h3>Italian</h3>
+                  <input name="product" value="360" type="radio" onclick="totalIt()"/>
+                  <span class="checkmark"></span>
+                  <p>360 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="Honey-Oat">
+            <div class="gallery">
+              <img src="img/bread/honey-oat.png" alt="Honey-Oat">
+              <div class="desc">
+                <label class="container">
+                  <h3>Honey Oat</h3>
+                  <input name="product" value="360" type="radio" onclick="totalIt()"/>
+                  <span class="checkmark"></span>
+                  <p>360 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="second, full-viewport" id="center-mode-carousel-meat">
+        <h2>STEP 2: CHOOSE MEAT</h2>
+        <h4>Please feel free to add multiple protein and minerals to your diet.</h4>
+
+        <div class="responsive">
+          <div class="bacon">
+            <div class="gallery">
+              <img src="img/meat/bacon.png" alt="bacon">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Bacon</h3>
+                  <input name="product" value="138" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>138 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="chicken-breast">
+            <div class="gallery">
+              <img src="img/meat/chicken-breast.png" alt="chicken-breast">
+              <div class="desc">
+                <label class="container2">
+                  <h3>chicken</h3>
+                  <input name="product" value="200" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>200 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="pepperoni">
+            <div class="gallery">
+              <img src="img/meat/pepperoni.png" alt="pepperoni">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Pepperoni</h3>
+                  <input name="product" value="300" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>300 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="roast-beef">
+            <div class="gallery">
+              <img src="img/meat/roast-beef.png" alt="roast-beef">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Roast Beef</h3>
+                  <input name="product" value="183" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>183 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="ham">
+            <div class="gallery">
+              <img src="img/meat/ham.png" alt="ham">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Ham</h3>
+                  <input name="product" value="91" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>91 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="third, full-viewport" id="center-mode-carousel-cheese">
+        <h2>STEP 3: CHOOSE CHEESE</h2>
+        <h4>Please choose any of your favourite cheese from our delicious cheese lineup.</h4>
+
+        <div class="responsive">
+          <div class="cheddar">
+            <div class="gallery">
+              <img src="img/cheese/cheddar.png" alt="cheddar">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Cheddar</h3>
+                  <input name="product" value="113" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>113 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="monterey-cheddar">
+            <div class="gallery">
+              <img src="img/cheese/monterey-cheddar.png" alt="monterey-cheddar">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Mont Cheddar</h3>
+                  <input name="product" value="90" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>90 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="processed-cheddar">
+            <div class="gallery">
+              <img src="img/cheese/processed-cheddar.png" alt="processed-cheddar">
+              <div class="desc">
+                <label class="container2">
+                  <h3>pro-cheddar</h3>
+                  <input name="product" value="110" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>110 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="swiss">
+            <div class="gallery">
+              <img src="img/cheese/swiss.png" alt="swiss">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Swiss</h3>
+                  <input name="product" value="106" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>106 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="forth, full-viewport" id="center-mode-carousel-veggies">
+        <h2>STEP 4: CHOOSE VEGGIES</h2>
+        <h4>Please choose multiple kinds of vegetable for your sandwich. We are proud to source a variety of homegrown produce, when possible, during peak harvest season.</h4>
+
+        <div class="responsive">
+          <div class="baby-spinach">
+            <div class="gallery">
+              <img src="img/veggies/baby-spinach.png" alt="baby-spinach">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Baby Spinach</h3>
+                  <input name="product" value="30" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>30 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="cucumber">
+            <div class="gallery">
+              <img src="img/veggies/cucumber.png" alt="cucumber">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Cucumber</h3>
+                  <input name="product" value="8" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>8 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="green-pepper">
+            <div class="gallery">
+              <img src="img/veggies/green-pepper.png" alt="pgreen-pepper">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Green Pepper</h3>
+                  <input name="product" value="12" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>12 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="lettuce">
+            <div class="gallery">
+              <img src="img/veggies/lettuce.png" alt="lettuce">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Lettuce</h3>
+                  <input name="product" value="20" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>20 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="red-onion">
+            <div class="gallery">
+              <img src="img/veggies/red-onion.png" alt="red-onion">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Red Onion</h3>
+                  <input name="product" value="48" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>48 Cals</p>
+                </label>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifth, full-viewport" id="center-mode-carousel-sauces">
+        <h2>STEP 5: CHOOSE SAUCES</h2>
+        <h4>Please choose any sauces you prefer. Top things off with a cool finish or a blast of spicy goodness.</h4>
+
+        <div class="responsive">
+          <div class="chipotle">
+            <div class="gallery">
+              <img src="img/sauces/chipotle-southwest.png" alt="chipotle">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Chipotle</h3>
+                  <input name="product" value="60" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>100 Cals</p>
+                </label>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="mayonnaise">
+            <div class="gallery">
+              <img src="img/sauces/mayonnaise.png" alt="mayonnaise">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Mayonnaise</h3>
+                  <input name="product" value="110" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>110 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="ranch">
+            <div class="gallery">
+              <img src="img/sauces/ranch.png" alt="ranch">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Ranch</h3>
+                  <input name="product" value="220" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>220 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="subway-vinaigrette">
+            <div class="gallery">
+              <img src="img/sauces/subway-Vinaigrette.png" alt="subway-vinaigrette">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Vinaigrette</h3>
+                  <input name="product" value="110" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>110 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="mustard">
+            <div class="gallery">
+              <img src="img/sauces/mustard.png" alt="mustard">
+              <div class="desc">
+                <label class="container2">
+                  <h3>Mustard</h3>
+                  <input name="product" value="60" type="checkbox" onclick="totalIt()"/>
+                  <span class="checkmark2"></span>
+                  <p>60 Cals</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="sixth, full-viewport" id="order-now">
+
+        <h2>STEP 6: ORDER NOW</h2>
+        <div>Your order should be completed in <span id="time">5:00</span> minutes!</div>
+        <button class="btn-order"><a href="order-prepare.html"><span>ORDER NOW</span></a></button>
+        <div id="myDIV">
+          <button class="btn-pop"><span>POPULAR MENU</span></a></button>
+        </div>
+       
+ 
+      </section>
+      <hr>
+    </article>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+<footer>
+  <div>
+    The total energy of your customized sandwich is:
+    <input value="0 Calories" readonly="readonly" type="text" class="total" id="total"/>
+  </div>
+</footer>
+
+</html>
