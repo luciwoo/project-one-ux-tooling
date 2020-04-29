@@ -1,5 +1,8 @@
 Student: Nargiz, Yiting 
 
+Updates:
+New feature: On-time Calories calculator for the customized sandwich sticked at the bottom of the screen based on the selected ingredients.
+
 # PROJECT: UX TOOLING
 **CREATING DROP-IN UI COMPONENTS AND TOOLS TO IMPROVE THE USER EXPERIENCE OF AN ARTICLE**
 
